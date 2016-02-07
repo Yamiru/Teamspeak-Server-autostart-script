@@ -1,11 +1,11 @@
 #! /bin/sh
  ### BEGIN INIT INFO
-# Provides:          Yamiru.com
+# Provides:          ts3server
 # Required-Start:    $remote_fs
 # Required-Stop:     $remote_fs
 # Default-Start:     2 3 4 5
 # Default-Stop:      0 1 6
-# Short-Description: Teamspeak autostart script linux
+# Short-Description: Teamspeak autostart script linux by Yamiru.com
 # Description:       Teamspeak init.d script to automatic start ts3 server on boot
 #                    as diferent user.
 ### END INIT INFO
