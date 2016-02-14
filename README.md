@@ -51,3 +51,8 @@ Teamspeak init.d script to automatic start ts3 server on boot as diferent user.
 stop  TeamSpeak 3 Server :  ```     service ts3server stop    ```
     
 start TeamSpeak 3 Server :  ```     service ts3server start    ```
+
+
+
+
+If you change /etc/init.d/ts3server file --->  ```     systemctl daemon-reload    ``` 
