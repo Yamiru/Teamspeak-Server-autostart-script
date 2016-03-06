@@ -56,4 +56,4 @@ start TeamSpeak 3 Server :  ```     service ts3server start    ```
 
 
 
-If you change /etc/init.d/ts3server file --->  ```     systemctl daemon-reload    ``` 
+If you change /etc/init.d/ts3server file --->  ```     systemctl daemon-reload    ```     ```  &  sudo update-rc.d ts3server defaults ```
