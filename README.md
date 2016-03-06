@@ -10,6 +10,7 @@ Teamspeak init.d script to automatic start ts3 server on boot as diferent user.
 - nano editor (```sudo apt-get install nano```)
 - installed latest version of [teamspeak3server](https://www.teamspeak.com/downloads#server) 
 - dir location of ts3server /opt/ts3server/
+- permission for teamspeak user (```sudo chown teamspeak:teamspeak -R /opt/ts3server```)
 - user teamspeak  (```sudo adduser --disabled-login teamspeak```)
 
 ##How to build
