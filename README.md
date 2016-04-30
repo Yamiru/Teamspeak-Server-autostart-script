@@ -2,7 +2,7 @@
 Teamspeak init.d script to automatic start ts3 server on boot as diferent user.
 
 ![Build Status](https://img.shields.io/badge/Build Status-passed-green.svg)
-![TS3](https://img.shields.io/badge/tested version ts3server-3.0.12.3 x64-red.svg)
+![TS3](https://img.shields.io/badge/tested version ts3server-3.0.12.4 x64-red.svg)
 ![os](https://img.shields.io/badge/tested OS-Ubuntu server 16.04LTS x64-blue.svg)
 ##Requirements
 - debian based OS
