@@ -16,7 +16,7 @@ case "$1" in
     ;;
   stop)
     su - teamspeak -c "/opt/ts3server/ts3server_startscript.sh stop"
-    echo "Shuting down TS3 Server"
+    echo "Shutting down TS3 Server"
     ;;
   *)
     echo "Usage: /etc/init.d/ts3server {start|stop}"
