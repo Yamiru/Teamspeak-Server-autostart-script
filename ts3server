@@ -16,11 +16,11 @@
 
 case "$1" in
   start)
-    su - ts3server -c "/opt/ts3server/ts3server_startscript.sh start"
+    su - teamspeak -c "/opt/ts3server/ts3server_startscript.sh start"
     echo "Starting TS3 Server"
     ;;
   stop)
-    su - ts3server -c "/opt/ts3server/ts3server_startscript.sh stop"
+    su - teamspeak -c "/opt/ts3server/ts3server_startscript.sh stop"
     echo "Shutting down TS3 Server"
     ;;
   *)
