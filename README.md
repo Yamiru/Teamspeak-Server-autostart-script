@@ -7,7 +7,8 @@ Teamspeak init.d script to automatic start ts3 server on boot as diferent user.
 - debian based OS
 - sudoers   (```aptitude install sudo```)
 - nano editor (```sudo apt-get install nano```)
-- installed latest version of [teamspeak3server](https://www.teamspeak.com/downloads#server) 
+- downloaded latest version of [teamspeak3server](https://www.teamspeak.com/downloads#server) 
+- create a file called ".ts3server_license_accepted" in the current working directory
 - dir location of ts3server /opt/ts3server/
 - permission for teamspeak user (```sudo chown teamspeak:teamspeak -R /opt/ts3server```)
 - user teamspeak  (```sudo adduser --disabled-login teamspeak```)
