@@ -1,17 +1,27 @@
 # Teamspeak-Server-autostart-script
 Teamspeak init.d script to automatic start ts3 server on boot as diferent user.
 
-<img src="https://img.shields.io/badge/Build%20Status-passed-green.svg" alt="passed"> <img src="https://img.shields.io/badge/TS3%20version-ts3server--3.5.1.%20x64-red.svg"> <img src="https://img.shields.io/badge/tested%20OS-Debian%20server%209.6%20x64-blue.svg">
+<img src="https://img.shields.io/badge/Build%20Status-passed-green.svg" alt="passed"> <img src="https://img.shields.io/badge/TS3%20version-ts3server--3.12.0%20x64-red.svg"> <img src="https://img.shields.io/badge/tested%20OS-Debian%20server%2010.3.0%20x64-blue.svg">
 
 ##Requirements
 - debian based OS
-- sudoers   (```aptitude install sudo```)
+- sudoers   (```apt-get install sudo```)
 - nano editor (```sudo apt-get install nano```)
-- downloaded latest version of [teamspeak3server](https://www.teamspeak.com/downloads#server) 
-- create a file called ".ts3server_license_accepted" in the current working directory
-- dir location of ts3server /opt/ts3server/
-- permission for teamspeak user (```sudo chown teamspeak:teamspeak -R /opt/ts3server```)
-- user teamspeak  (```sudo adduser --disabled-login teamspeak```)
+- create folder (```mkdir /opt/ts3server/```)
+- go to (```cd /opt/ts3server/```)
+í downloaded latest version of [teamspeak3server](https://www.teamspeak.com/downloads#server)
+- download (```wget https://files.teamspeak-services.com/releases/server/3.12.0/teamspeak3-server_linux_amd64-3.12.0.tar.bz2```)
+- extract (```tar xvf teamspeak3-server_linux_amd64-3.12.0.tar.bz2```)
+- remove archive (```rm teamspeak3-server_linux_amd64-3.12.0.tar.bz2```)
+- move to head folder (```mv  -v /opt/ts3server/teamspeak3-server_linux_amd64/* /opt/ts3server/```)
+- create accept license (```touch .ts3server_license_accepted```) after read LICENSE file
+- create user teamspeak (```sudo adduser --disabled-login teamspeak```)
+- change folder permissions (```sudo chown teamspeak:teamspeak -R /opt/ts3server```)
+- login teamspeak (```su teamspeak```)
+- start ts3server (```sh ts3server_startscript.sh start```)
+- (copy topken and serveradmin pass)
+- login root and continue to create autostart script...  (```su root```)
+
 
 ##How to build
 1. Terminal/Console:
@@ -43,15 +53,15 @@ Teamspeak init.d script to automatic start ts3 server on boot as diferent user.
 
 8. Terminal/Console:
 
-``` reboot ```
+``` systemctl reboot ```
 
 
  
 ##Commands
 
-stop  TeamSpeak 3 Server :  ```     service ts3server stop    ```
+stop  TeamSpeak 3 Server :  ```     systectl stop ts3server    ```
     
-start TeamSpeak 3 Server :  ```     service ts3server start    ```
+start TeamSpeak 3 Server :  ```     systectl start ts3server    ```
 
 
 
