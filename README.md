@@ -67,3 +67,6 @@ start TeamSpeak 3 Server :  ```     systectl start ts3server    ```
 
 
 If you change /etc/init.d/ts3server file --->  ```     systemctl daemon-reload    ```   &  ```  sudo update-rc.d ts3server defaults ```
+
+
+if not work: change file permission /chmod/ to 777 ts3server_startscript.sh & ts3server_minimal_runscript.sh
